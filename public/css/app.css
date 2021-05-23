@@ -32088,6 +32088,10 @@ select {
   --tw-backdrop-sepia: sepia(100%);
 }
 
+a {
+  color:#336699;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
