@@ -1,11 +1,34 @@
 POST http://localhost/api/student HTTP/1.1
 content-type: application/json
 Accept: application/json
+Authorization: Bearer 2|npTVUmfuBt4FoFwg2LVAeBRpzgPC5RQ5Tlt89PBW
 
-[
     {   
         "name": "Test Student",
-        "email": "TEST",
+        "email": "email1@email.com",
         "school": "Auckland Grammar"
     }
-]
+
+###
+
+POST http://localhost/api/login HTTP/1.1
+content-type: application/json
+Accept: application/json
+
+    {   
+        "email": "admin@admin.com",
+        "password": "password"
+    }
+###
+GET http://localhost/api/logout HTTP/1.1
+Accept: application/json
+Authorization: Bearer 2|npTVUmfuBt4FoFwg2LVAeBRpzgPC5RQ5Tlt89PBW
+
+###
+
+
+POST http://localhost/api/me HTTP/1.1
+content-type: application/json
+Accept: application/json
+
+
