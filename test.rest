@@ -1,0 +1,11 @@
+POST http://localhost/api/student HTTP/1.1
+content-type: application/json
+Accept: application/json
+
+[
+    {   
+        "name": "Test Student",
+        "email": "TEST",
+        "school": "Auckland Grammar"
+    }
+]
